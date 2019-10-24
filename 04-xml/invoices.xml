@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoices>    
+	<Invoice ID="1000">
+	   <CustomerName>Jane Smith</CustomerName>
+	   <LineItems>
+            <!-- here is a comment -->
+	      <LineItem>
+	         <Sku>134</Sku>
+	         <Description>Dons Boxers</Description>
+	         <Price>9.95</Price>
+	      </LineItem>
+	      <LineItem>
+	         <Sku>153</Sku>
+	         <Description>Rice Krispy COM Object</Description>
+	         <Price>10000.00</Price>
+	      </LineItem>
+	      <LineItem>
+	         <Sku>134</Sku>
+	         <Description>Red Vines</Description>
+	         <Price>4.95</Price>
+	      </LineItem>
+	   </LineItems>
+	</Invoice>
+	<Invoice ID="1010">
+	   <CustomerName>Storm Phillips</CustomerName>
+	   <LineItems>
+	      <LineItem>
+	         <Sku>171</Sku>
+	         <Description>COM is LOVE T-shirt</Description>
+	         <Price>9.95</Price>
+	      </LineItem>
+	      <LineItem>
+	         <Sku>200</Sku>
+	         <Description>ATL Internals</Description>
+	         <Price>49.95</Price>
+	      </LineItem>
+	   </LineItems>
+	</Invoice>
+	<Invoice ID="1020">
+	   <CustomerName>John Stockton</CustomerName>
+	   <LineItems>
+	      <LineItem>
+	         <Sku>53</Sku>
+	         <Description>Caffeinated Beverages</Description>
+	         <Price>0.50</Price>
+	      </LineItem>
+	      <LineItem>
+	         <Sku>134</Sku>
+	         <Description>Friday Pizza</Description>
+	         <Price>0.00</Price>
+	      </LineItem>
+	      <LineItem>
+	         <Sku>134</Sku>
+	         <Description>MFC Internals</Description>
+	         <Price>39.95</Price>
+	      </LineItem>
+	   </LineItems>
+	</Invoice>
+</Invoices>  

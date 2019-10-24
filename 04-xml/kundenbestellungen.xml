@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Kunden_liste>
+   <Kunden Firma="Alfreds Futterkiste" Ort="Berlin" PLZ="12209" Land="Deutschland" Telefon="030-0074321">
+       <Kunden_Code>ALFKI</Kunden_Code>
+       <Strasse>Obere Str. 57</Strasse>
+       <Personal_Nr>9</Personal_Nr>
+       <Bestellungen>
+             <Bestell_Nr>10643</Bestell_Nr>
+             <Kunden_Code>ALFKI</Kunden_Code>
+             <Bestelldatum>25.09.1995</Bestelldatum>
+             <Frachtkosten>29,46</Frachtkosten>
+       </Bestellungen>
+       <Bestellungen>
+             <Bestell_Nr>10952</Bestell_Nr>
+             <Kunden_Code>ALFKI</Kunden_Code>
+             <Bestelldatum>15.04.1996</Bestelldatum>
+             <Frachtkosten>40,42</Frachtkosten>
+       </Bestellungen>
+   </Kunden>
+   <Kunden Firma="Ana Trujillo Emparedados y helados" Ort="Mexico D.F." PLZ="05021" Land="Mexiko" Telefon="(5) 555-4729">
+       <Kunden_Code>ANATR</Kunden_Code>
+       <Strasse>Avda. de la Constitucin 2222</Strasse>
+       <Personal_Nr>9</Personal_Nr>
+       <Bestellungen>
+             <Bestell_Nr>10759</Bestell_Nr>
+             <Kunden_Code>ANATR</Kunden_Code>
+             <Bestelldatum>29.12.1995</Bestelldatum>
+             <Frachtkosten>11,99</Frachtkosten>
+       </Bestellungen>
+       <Bestellungen>
+             <Bestell_Nr>10926</Bestell_Nr>
+             <Kunden_Code>ANATR</Kunden_Code>
+             <Bestelldatum>03.04.1996</Bestelldatum>
+             <Frachtkosten>39,92</Frachtkosten>
+       </Bestellungen>
+   </Kunden>
+   <Kunden Firma="Bolido Comidas preparadas" Ort="Madrid" PLZ="28023" Land="Spanien" Telefon="(91) 555 22 82">
+       <Kunden_Code>BOLID</Kunden_Code>
+       <Strasse>C/ Araquil, 67</Strasse>
+       <Personal_Nr>1</Personal_Nr>
+       <Bestellungen>
+             <Bestell_Nr>10970</Bestell_Nr>
+             <Kunden_Code>BOLID</Kunden_Code>
+             <Bestelldatum>23.04.1996</Bestelldatum>
+             <Frachtkosten>16,16</Frachtkosten>
+       </Bestellungen>
+   </Kunden>
+   <Kunden Firma="Cactus Comidas para llevar" Ort="Buenos Aires" PLZ="1010" Land="Argentinien" Telefon="(1) 135-5555">
+       <Kunden_Code>CACTU</Kunden_Code>
+       <Strasse>Cerrito 333</Strasse>
+       <Personal_Nr>1</Personal_Nr>
+       <Bestellungen>
+             <Bestell_Nr>10782</Bestell_Nr>
+             <Kunden_Code>CACTU</Kunden_Code>
+             <Bestelldatum>17.01.1996</Bestelldatum>
+             <Frachtkosten>1,1</Frachtkosten>
+       </Bestellungen>
+       <Bestellungen>
+             <Bestell_Nr>10937</Bestell_Nr>
+             <Kunden_Code>CACTU</Kunden_Code>
+             <Bestelldatum>09.04.1996</Bestelldatum>
+             <Frachtkosten>31,51</Frachtkosten>
+       </Bestellungen>
+   </Kunden>
+   <Kunden Firma="Lets Stop N Shop" Ort="San Francisco" PLZ="94117" Land="USA" Telefon="(415) 555-5938">
+       <Kunden_Code>LETSS</Kunden_Code>
+       <Strasse>87 Polk St. Suite 5</Strasse>
+       <Personal_Nr>4</Personal_Nr>
+       <Bestellungen>
+             <Bestell_Nr>10719</Bestell_Nr>
+             <Kunden_Code>LETSS</Kunden_Code>
+             <Bestelldatum>27.11.1995</Bestelldatum>
+             <Frachtkosten>51,44</Frachtkosten>
+       </Bestellungen>
+       <Bestellungen>
+             <Bestell_Nr>10884</Bestell_Nr>
+             <Kunden_Code>LETSS</Kunden_Code>
+             <Bestelldatum>14.03.1996</Bestelldatum>
+             <Frachtkosten>90,97</Frachtkosten>
+       </Bestellungen>
+   </Kunden>
+</Kunden_liste>

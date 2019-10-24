@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--                                                                -->
+<!--   W4F: Copyright Arnaud Sahuguet and Fabien Azavant, 1998-99   -->
+<!--   URL: http://db.cis.upenn.edu/W4F                             -->
+<!--                                                                -->
+
+<W4F_DOC>
+  <Actor>
+    <Name>
+      <FirstName>Roger</FirstName>
+      <LastName>Moore</LastName>
+    </Name>
+    <Filmography>
+      <Movie>
+        <Title>"Dream Team, The"</Title>
+        <Year>1999</Year>
+      </Movie>
+      <Movie>
+        <Title>D.R.E.A.M. Team</Title>
+        <Year>1999</Year>
+      </Movie>
+      <Movie>
+        <Title>Saint, The</Title>
+        <Year>1997</Year>
+      </Movie>
+      <Movie>
+        <Title>Spice World</Title>
+        <Year>1997</Year>
+      </Movie>
+      <Movie>
+        <Title>Quest, The</Title>
+        <Year>1996</Year>
+      </Movie>
+      <Movie>
+        <Title>Man Who Wouldn't Die, The</Title>
+        <Year>1995</Year>
+      </Movie>
+      <Movie>
+        <Title>Bed &amp; Breakfast</Title>
+        <Year>1992</Year>
+      </Movie>
+      <Movie>
+        <Title>Bullseye!</Title>
+        <Year>1991</Year>
+      </Movie>
+      <Movie>
+        <Title>Feuer, Eis &amp; Dynamit</Title>
+        <Year>1990</Year>
+      </Movie>
+      <Movie>
+        <Title>Magic Snowman, The</Title>
+        <Year>1988</Year>
+      </Movie>
+      <Movie>
+        <Title>View to a Kill, A</Title>
+        <Year>1985</Year>
+      </Movie>
+      <Movie>
+        <Title>Naked Face, The</Title>
+        <Year>1984</Year>
+      </Movie>
+      <Movie>
+        <Title>Curse of the Pink Panther</Title>
+        <Year>1983</Year>
+      </Movie>
+      <Movie>
+        <Title>Octopussy</Title>
+        <Year>1983</Year>
+      </Movie>
+      <Movie>
+        <Title>Cannonball Run, The</Title>
+        <Year>1981</Year>
+      </Movie>
+      <Movie>
+        <Title>For Your Eyes Only</Title>
+        <Year>1981</Year>
+      </Movie>
+      <Movie>
+        <Title>Sunday Lovers</Title>
+        <Year>1980</Year>
+      </Movie>
+      <Movie>
+        <Title>Sea Wolves: The Last Charge of the Calcutta Light Horse, The</Title>
+        <Year>1980</Year>
+      </Movie>
+      <Movie>
+        <Title>Ffolkes</Title>
+        <Year>1980</Year>
+      </Movie>
+      <Movie>
+        <Title>Escape to Athena</Title>
+        <Year>1979</Year>
+      </Movie>
+      <Movie>
+        <Title>Moonraker</Title>
+        <Year>1979</Year>
+      </Movie>
+      <Movie>
+        <Title>Wild Geese, The</Title>
+        <Year>1978</Year>
+      </Movie>
+      <Movie>
+        <Title>Spy Who Loved Me, The</Title>
+        <Year>1977</Year>
+      </Movie>
+      <Movie>
+        <Title>Shout at the Devil</Title>
+        <Year>1976</Year>
+      </Movie>
+      <Movie>
+        <Title>Esecutori, Gli</Title>
+        <Year>1976</Year>
+      </Movie>
+      <Movie>
+        <Title>Sherlock Holmes in New York</Title>
+        <Year>1976</Year>
+      </Movie>
+      <Movie>
+        <Title>That Lucky Touch</Title>
+        <Year>1975</Year>
+      </Movie>
+      <Movie>
+        <Title>Man with the Golden Gun, The</Title>
+        <Year>1974</Year>
+      </Movie>
+      <Movie>
+        <Title>Gold</Title>
+        <Year>1974</Year>
+      </Movie>
+      <Movie>
+        <Title>Live and Let Die</Title>
+        <Year>1973</Year>
+      </Movie>
+      <Movie>
+        <Title>"Persuaders!, The"</Title>
+        <Year>1971</Year>
+      </Movie>
+      <Movie>
+        <Title>Vendetta for the Saint</Title>
+        <Year>1970</Year>
+      </Movie>
+      <Movie>
+        <Title>Man Who Haunted Himself, The</Title>
+        <Year>1970</Year>
+      </Movie>
+      <Movie>
+        <Title>Crossplot</Title>
+        <Year>1969</Year>
+      </Movie>
+      <Movie>
+        <Title>Fiction Makers, The</Title>
+        <Year>1967</Year>
+      </Movie>
+      <Movie>
+        <Title>"Saint, The"</Title>
+        <Year>1962</Year>
+      </Movie>
+      <Movie>
+        <Title>Branco di vigliacchi, Un</Title>
+        <Year>1962</Year>
+      </Movie>
+      <Movie>
+        <Title>No Man's Land</Title>
+        <Year>1962</Year>
+      </Movie>
+      <Movie>
+        <Title>Gold of the Seven Saints</Title>
+        <Year>1961</Year>
+      </Movie>
+      <Movie>
+        <Title>Sins of Rachel Cade, The</Title>
+        <Year>1961</Year>
+      </Movie>
+      <Movie>
+        <Title>Ratto delle Sabine, Il</Title>
+        <Year>1961</Year>
+      </Movie>
+      <Movie>
+        <Title>"Maverick"</Title>
+        <Year>1957</Year>
+      </Movie>
+      <Movie>
+        <Title>"Alaskans, The"</Title>
+        <Year>1959</Year>
+      </Movie>
+      <Movie>
+        <Title>Miracle, The</Title>
+        <Year>1959</Year>
+      </Movie>
+      <Movie>
+        <Title>"Ivanhoe"</Title>
+        <Year>1958</Year>
+      </Movie>
+      <Movie>
+        <Title>Diane</Title>
+        <Year>1956</Year>
+      </Movie>
+      <Movie>
+        <Title>Interrupted Melody</Title>
+        <Year>1955</Year>
+      </Movie>
+      <Movie>
+        <Title>King's Thief, The</Title>
+        <Year>1955</Year>
+      </Movie>
+      <Movie>
+        <Title>Last Time I Saw Paris, The</Title>
+        <Year>1954</Year>
+      </Movie>
+      <Movie>
+        <Title>Clown, The</Title>
+        <Year>1952</Year>
+      </Movie>
+      <Movie>
+        <Title>One Wild Oat</Title>
+        <Year>1951</Year>
+      </Movie>
+      <Movie>
+        <Title>Duchess of Idaho</Title>
+        <Year>1950</Year>
+      </Movie>
+      <Movie>
+        <Title>Trottie True</Title>
+        <Year>1949</Year>
+      </Movie>
+      <Movie>
+        <Title>Gal Who Took the West, The</Title>
+        <Year>1949</Year>
+      </Movie>
+      <Movie>
+        <Title>Paper Orchid</Title>
+        <Year>1949</Year>
+      </Movie>
+      <Movie>
+        <Title>Fuller Brush Man, The</Title>
+        <Year>1948</Year>
+      </Movie>
+      <Movie>
+        <Title>Caesar and Cleopatra</Title>
+        <Year>1946</Year>
+      </Movie>
+      <Movie>
+        <Title>Gaiety George</Title>
+        <Year>1946</Year>
+      </Movie>
+      <Movie>
+        <Title>Piccadilly Incident</Title>
+        <Year>1946</Year>
+      </Movie>
+      <Movie>
+        <Title>Perfect Strangers</Title>
+        <Year>1945</Year>
+      </Movie>
+    </Filmography>
+  </Actor>
+</W4F_DOC>
