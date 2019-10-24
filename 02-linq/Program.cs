@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace linq_u2
 {
@@ -16,6 +17,11 @@ namespace linq_u2
             Solution4();
             Solution5();
             Solution6();
+            Solution7();
+            Solution8();
+            Solution9();
+            Solution10();
+            Solution11();
 
             Console.ReadLine();
         }
@@ -119,6 +125,72 @@ namespace linq_u2
             SolutionPrint(6);
             ObjectDumper.Write(solution6);
             Console.WriteLine();
+        }
+
+        /*---------------------------------
+         *              XML
+         *---------------------------------*/
+
+        /*
+         * Liste die User mit ihren Reviews
+         */
+        static void Solution7()
+        {
+            var solution7 = new XElement("Benutzer", from u in SampleData.Users
+                                                     select new XElement("User", new XAttribute("Name", u.Name), from r in SampleData.Reviews
+                                                                                                                 where r.User == u
+                                                                                                                 select new XElement("Review", r.Comments)));
+
+            SolutionPrint(7);
+            Console.WriteLine(solution7);
+        }
+
+        /*
+         * Liste die Autoren mit Ihren B�chern und dazu
+         * die Anzahl der Reviews
+         */
+        static void Solution8()
+        {
+            var solution8 = new XElement("Autoren", from a in SampleData.Authors
+                                                    select new XElement("Autor", new XAttribute("Name", a.LastName + " " + a.FirstName), from b in SampleData.Books
+                                                                                                                                         where b.Authors.Any(x => x == a)
+                                                                                                                                         select new XElement("Buch", new XAttribute("Titel", b.Title),
+                                                                                                                                         new XAttribute("Anzrev", b.Reviews.Count()))));
+            
+            SolutionPrint(8);
+            Console.WriteLine(solution8);
+                   
+        }
+
+        /*
+         * Geben Sie die Verlage aus, mit Angabe aller Reviews,
+         * die Bücher des Verlags betreffen
+         */
+        static void Solution9()
+        {
+            var solution9 = new XElement("Verlage", from p in SampleData.Publishers
+                                                    select new XElement("Verlag", new XAttribute("Name", p.Name), from b in SampleData.Books
+                                                                                                                  from r in b.Reviews
+                                                                                                                  where b.Publisher == p
+                                                                                                                  select new XElement("Review", new XAttribute("Titel", b.Title), new XAttribute("Review", r.Comments), new XAttribute("Rating", r.Rating))));
+
+            SolutionPrint(9);
+        }
+
+        /*
+         * Geben Sie Verlage aus, Name und durchschnittlices Rating
+         */
+        static void Solution10()
+        {
+
+        }
+
+        /*
+         * welche Ausgabe erwarten Sie mit folgendem Code
+         */
+        static void Solution11()
+        {
+
         }
     }
 }
