@@ -29,6 +29,7 @@ namespace linq_u2
         static void SolutionPrint(int solutionNumber)
         {
             Console.WriteLine("----- Solution" + solutionNumber + " -----");
+            Console.WriteLine();
         }
 
         /*
@@ -42,7 +43,6 @@ namespace linq_u2
 
             SolutionPrint(1);
             ObjectDumper.Write(solution1, 1);
-            Console.WriteLine();
         }
 
         /*
@@ -57,7 +57,6 @@ namespace linq_u2
 
             SolutionPrint(2);
             ObjectDumper.Write(solution2);
-            Console.WriteLine();
         }
 
         /*
@@ -71,7 +70,6 @@ namespace linq_u2
 
             SolutionPrint(3);
             ObjectDumper.Write(solution3, 1);
-            Console.WriteLine();
         }
 
         /*
@@ -90,7 +88,6 @@ namespace linq_u2
 
             SolutionPrint(4);
             ObjectDumper.Write(solution4);
-            Console.WriteLine();
         }
 
         /*
@@ -106,7 +103,6 @@ namespace linq_u2
 
             SolutionPrint(5);
             ObjectDumper.Write(solution5);
-            Console.WriteLine();
         }
 
         /*
@@ -124,7 +120,6 @@ namespace linq_u2
 
             SolutionPrint(6);
             ObjectDumper.Write(solution6);
-            Console.WriteLine();
         }
 
         /*---------------------------------
@@ -175,6 +170,7 @@ namespace linq_u2
                                                                                                                   select new XElement("Review", new XAttribute("Titel", b.Title), new XAttribute("Review", r.Comments), new XAttribute("Rating", r.Rating))));
 
             SolutionPrint(9);
+            Console.WriteLine(solution9);
         }
 
         /*
@@ -182,7 +178,23 @@ namespace linq_u2
          */
         static void Solution10()
         {
+            var solution10v1 = new XElement("Verlage", from r in SampleData.Reviews
+                                                       group new { r.Rating } by r.Book.Publisher into grp
+                                                       select new XElement("Verlag", new XAttribute("Name", grp.Key.Name),
+                                                                                     new XAttribute("DRating", grp.Average(x => x.Rating))));
 
+            var solution10 = new XElement("wurzel", from p in SampleData.Publishers
+                                                    select new XElement("Verlag", new XAttribute("Name", p.Name),
+                                                                                  new XAttribute("dRating", (from b in SampleData.Books 
+                                                                                                             where b.Publisher == p
+                                                                                                             from r in b.Reviews
+                                                                                                             select r.Rating).Count() == 0 ? 0.0 : (from b in SampleData.Books
+                                                                                                                                                    where b.Publisher == p
+                                                                                                                                                    from r in b.Reviews
+                                                                                                                                                    select r.Rating).Average())));
+
+            SolutionPrint(10);
+            Console.WriteLine(solution10v1);
         }
 
         /*
@@ -190,7 +202,20 @@ namespace linq_u2
          */
         static void Solution11()
         {
-
+            /*
+             * static void DisplayProcesses()
+               {
+                    List<String> processes = new List<String>();
+                    foreach (Process process in Process.GetProcesses())
+                    processes.Add(process.ProcessName);
+                    ObjectDumper.Write(processes);
+                }
+                static void Main()
+                {
+                    DisplayProcesses();
+                    Console.ReadKey();
+                }
+                */
         }
     }
 }
