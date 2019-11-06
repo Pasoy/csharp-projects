@@ -3,36 +3,36 @@ by Pascal Schmiedjell
 
 ## Constructors
 ```csharp
-# static constructor- initializes static fields before object is created
+// static constructor- initializes static fields before object is created
 static Test() {}
 
-# calls another constructor overload of same class
+// calls another constructor overload of same class
 public Test() : this() {}
 
-# calls constructor of superclass, should be done in every child class
+// calls constructor of superclass, should be done in every child class
 public Test() : base() {}
 
-# destructor, called before object is garbagecollected
+// destructor, called before object is garbagecollected
 ~Test() {}
 ```
 
 ## Properties
 ```csharp
-# 1, can also be static
+// 1, can also be static
 private string test;
 public string Test
 {
-	set
-	{
-		test = value;
-	}
-	get
-	{
-		return test;
-	}
+    set
+    {
+        test = value;
+    }
+    get
+    {
+        return test;
+    }
 }
 
-# 2
+// 2
 public string Test { set; get; }
 ```
 
@@ -53,28 +53,28 @@ public interface TestInt<T> {}
 ```csharp
 var sol = from a in coll
           group a by a.Something into x
-		  where a.Something
-		  orderby a.Something
-		  select new { a.Something, a.Something1 };
+          where a.Something
+          orderby a.Something
+          select new { a.Something, a.Something1 };
 		  
-# ORDERBY
+// ORDERBY
 foreach (var nameGroup in queryLastNames)
 {
-	Console.WriteLine($"Key: {nameGroup.Key}");
-	foreach (var student in nameGroup)
-	{
-		Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
-	}
+    Console.WriteLine($"Key: {nameGroup.Key}");
+    foreach (var student in nameGroup)
+    {
+        Console.WriteLine($"\t{student.LastName}, {student.FirstName}");
+    }
 }
 
 foreach (IGrouping<char, Student> studentGroup in studentQuery2)
 {
-	Console.WriteLine(studentGroup.Key);
-	# Explicit type for student could also be used here
-	foreach (var student in studentGroup)
-	{
-		Console.WriteLine($"{student.Last}, {student.First}");
-	}
+    Console.WriteLine(studentGroup.Key);
+    // Explicit type for student could also be used here
+    foreach (var student in studentGroup)
+    {
+        Console.WriteLine($"{student.Last}, {student.First}");
+    }
 }
 ```
 
@@ -86,28 +86,28 @@ var sol =
   select new XElement("Publisher",
    new XAttribute("Name", p.Name), 
     from r in SampleData.Reviews
-	where r.Movie.Publisher == p
-	orderby r.Movie.Title
-	select new XElement("Review",
-	 new XAttribute("Title", r.Movie.Title),
-	 new XAttribute("Review", r.Comments),
-	 new XAttribute("Rating", r.Rating))));
+    where r.Movie.Publisher == p
+    orderby r.Movie.Title
+    select new XElement("Review",
+     new XAttribute("Title", r.Movie.Title),
+     new XAttribute("Review", r.Comments),
+     new XAttribute("Rating", r.Rating))));
 
-# load files
+// load files
 var xlin = XElement.Load(@"..\..\something.xml");
 
 var sol = from e in xlin.XPathSelectElements("//Kunden")
-		  orderby e.Attribute("Country").Value
-		  select new { Country = e.Attribute("Country").Value,
-					   Company = e.Attribute("Company").Value };
+          orderby e.Attribute("Country").Value
+          select new { Country = e.Attribute("Country").Value,
+                       Company = e.Attribute("Company").Value };
 
-# XPath querying
+// XPath querying
 var sol = from e in xlin.Descendants("Name")
-		  select new { Ename = e.Name.ToString(), e.Value };
+          select new { Ename = e.Name.ToString(), e.Value };
 ```
 
 ## XPath
-```
+```xml
 Select the document node
 /
 
@@ -189,45 +189,45 @@ sum(//singer/@id)
 
 ## Sorting
 ```csharp
-# with a method
+// with a method
 public int Compare(Student x, Student y)
 {
-	if(x == null) return y == null ? 0 : 1;
-	return x.Name.Length.CompareTo(y?.Name.Length);
+    if(x == null) return y == null ? 0 : 1;
+    return x.Name.Length.CompareTo(y?.Name.Length);
 }
 
-# with IComparable
+// with IComparable
 list.Sort();
 
 public class Student : IComparable(Student) {}
 
 public int CompareTo(Student st)
 {
-	return (this.Name.CompareTo(st?.Name));
+    return (this.Name.CompareTo(st?.Name));
 }
 
-# with IComparer
+// with IComparer
 list.Sort(new MyComparer);
 
 public class MyComparer : IComparer<Student>
 {
-	public int Compare(Student x, Student y)
-	{
-		if(x == null) return y == null ? 0 : 1;
-		return x.Name.Length.CompareTo(y?.Name.Length);
-	}
+    public int Compare(Student x, Student y)
+    {
+        if(x == null) return y == null ? 0 : 1;
+        return x.Name.Length.CompareTo(y?.Name.Length);
+    }
 }
 
-# with Comparison
+// with Comparison
 static int CompareLength(string a, string b)
 {
-	// return result of CompareTo with length
-	return a.Length.CompareTo(b.Length);
+    // return result of CompareTo with length
+    return a.Length.CompareTo(b.Length);
 }
 
 Comparison<string> comparison = new Comparison<string>(CompareLength);
 Array.Sort(array, comparison);
-#or
+//or
 list.Sort((x, y) => x.Name.Length.CompareTo(y?.Name.Length));
 ```
 
@@ -235,13 +235,13 @@ list.Sort((x, y) => x.Name.Length.CompareTo(y?.Name.Length));
 ```csharp
 class MyColl<T> : List<T> where T:Student
 {
-	public void StudentList()
-	{
-		foreach (var item in this)
-		{
-			Console.Write($"{item} is called {item.Name}");
-		}
-	}
+    public void StudentList()
+    {
+        foreach (var item in this)
+        {
+            Console.Write($"{item} is called {item.Name}");
+        }
+    }
 }
 ```
 
