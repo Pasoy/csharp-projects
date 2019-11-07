@@ -49,5 +49,39 @@ namespace Organisation.Files
 
             return "No manager yet";
         }
+
+        public decimal EmployeeCostsWithoutBonus()
+        {
+            decimal sum = 0.0m;
+
+            foreach (Employee e in Employees)
+            {
+                sum += e.Wage;
+            }
+
+            return sum;
+        }
+
+        public decimal CostsWithoutBonus()
+        {
+            return EmployeeCostsWithoutBonus() + Expenses;
+        }
+
+        public decimal Bonus()
+        {
+            return WinningsWithoutBonus() * Manager.Wage;
+        }
+
+        public decimal EmployeeCosts()
+        {
+            return EmployeeCostsWithoutBonus() + Bonus();
+        }
+
+        public decimal Winnings()
+        {
+            return WinningsWithoutBonus() + Bonus();
+        }
+
+        public abstract decimal WinningsWithoutBonus();
     }
 }

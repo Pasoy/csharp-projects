@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Organisation.Files.Enum;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -12,12 +13,12 @@ namespace Organisation.Files.Persons
         public int LastID { set; get; } = 0;
         public int ID { set; get; }
         public string Description { set; get; }
-        public Organisation Organisation { set { SetOrganisation(value); } get { return organisation; } }
-        public decimal Wage { set { SetWage(value); } get { return wage; } }
+        public virtual Organisation Organisation { set { SetOrganisation(value); } get { return organisation; } }
+        public virtual decimal Wage { set { SetWage(value); } get { return wage; } }
         public decimal MaxWage { set; get; }
 
 
-        public Employee(string name, string address, int age, char gender, int id, string description, Organisation organisation, decimal wage, decimal maxwage) : base(name, address, age, gender)
+        public Employee(string name, string address, int age, Gender gender, int id, string description, Organisation organisation, decimal wage, decimal maxwage) : base(name, address, age, gender)
         {
             this.ID = id;
             this.LastID = id - 1;
